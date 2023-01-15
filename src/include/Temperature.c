@@ -136,6 +136,6 @@ void StartTemp()
         KToF();
         break;
     default:
-        printf("Sorry %d is not an option", unit);
+        printf("Sorry %d is not an option\n", unit);
     }
 }
