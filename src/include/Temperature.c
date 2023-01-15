@@ -39,7 +39,7 @@ void CToF()
 void KToC()
 {
     float InputK, Result;
-    printf("Specify your input Celcius\n");
+    printf("Specify your input Kelvin\n");
     scanf("%f", &InputK);
     if (InputK < 0)
     {
@@ -134,5 +134,8 @@ void StartTemp()
         break;
     case 5:
         KToF();
+        break;
+    default:
+        printf("Sorry %d is not an option", unit);
     }
 }
