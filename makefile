@@ -1,5 +1,8 @@
 all:	#Build the calculator
-	gcc src/main.c src/include/CelciusToFahrenheit.c -o build/main
+	rm -rf build
+	mkdir build
+	gcc src/main.c src/include/Temperature.c -o build/main
+	echo "Build successful in the folder build/";
 
 clean:
-	rm -f build/main
+	rm -rf build

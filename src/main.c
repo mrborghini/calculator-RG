@@ -1,10 +1,25 @@
 #include <stdio.h>
 #include "include/exit.h"
-#include "include/CelciusToFahrenheit.h"
+#include "include/Temperature.h"
 
 int main(int argc, char const *argv[])
 {
-    CToF();
-    FToC();
+    char mode;
+    printf("What mode would you like to use?\n");
+    printf("More information in list.txt\n");
+    scanf("%c", &mode);
+
+    switch (mode)
+    {
+    case 'T':
+        StartTemp();
+        break;
+
+    default:
+        printf("Sorry %c is not available yet.\n", mode);
+        printf("Please check if you're using capital letters for according text.txt %c \n", mode);
+        break;
+    }
+
     return 0;
 }
