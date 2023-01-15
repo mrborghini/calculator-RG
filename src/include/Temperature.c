@@ -66,41 +66,41 @@ void CToK()
     else
     {
         Result = InputC - 273.15;
-        printf("Result: %.2f degrees Celcius\n", Result);
+        printf("Result: %.2f degrees Kelvin\n", Result);
     }
 }
 
 void FToK()
 {
     float InputF, Result;
-    printf("Specify your input Celcius\n");
+    printf("Specify your input Fahrenheit\n");
     scanf("%f", &InputF);
     if (InputF < 0)
     {
-        printf("-273.15 is the lowest temperature of Celcius\n");
+        printf("0 is the lowest temperature of Kelvin\n");
         exit(0);
     }
     else
     {
-        Result = InputF - 459.67;
-        printf("Result: %.2f degrees Celcius\n", Result);
+        Result = (InputF - 32) * 5 / 9 + 273.15;
+        printf("Result: %.2f degrees Kelvin\n", Result);
     }
 }
 
 void KToF()
 {
     float InputK, Result;
-    printf("Specify your input Celcius\n");
+    printf("Specify your input Kelvin\n");
     scanf("%f", &InputK);
     if (InputK < 0)
     {
-        printf("-273.15 is the lowest temperature of Celcius\n");
+        printf("0 is the lowest temperature of Kelvin\n");
         exit(0);
     }
     else
     {
-        Result = InputK + 459.67;
-        printf("Result: %.2f degrees Celcius\n", Result);
+        Result = (InputK - 273.15) * 1.8 + 32;
+        printf("Result: %.2f degrees Fahrenheit\n", Result);
     }
 }
 
