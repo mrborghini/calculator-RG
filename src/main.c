@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
         printf("Please check if you're using capital letters for according text.txt %c \n", mode);
         break;
     }
-    printf("Press Ctrl + C to exit");
+    printf("Press Ctrl + C to exit\n");
     while (1){}
     
     return 0;
