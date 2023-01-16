@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "include/exit.h"
 #include "include/Temperature.h"
+#include "include/ohm.h"
 
 int main(int argc, char const *argv[])
 {
@@ -14,7 +15,9 @@ int main(int argc, char const *argv[])
     case 'T':
         StartTemp();
         break;
-
+    case 'o':
+        startOhm();
+        break;
     default:
         printf("Sorry %c is not available yet.\n", mode);
         printf("Please check if you're using capital letters for according text.txt %c \n", mode);

@@ -3,3 +3,4 @@ It is case sensitive!
 
 
 T for temperature
+o for ohm (Resistance)
