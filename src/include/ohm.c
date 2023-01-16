@@ -9,7 +9,7 @@ void resistance()
     printf("Specify your amps\n");
     scanf("%f", &inputI);
     result = inputU / inputI;
-    printf("Result = %.2f Ohm\n", result);
+    printf("Result: %.2f Ohm\n", result);
 }
 
 void voltage()
@@ -20,7 +20,7 @@ void voltage()
     printf("Specify your amps\n");
     scanf("%f", &inputI);
     result = inputR * inputI;
-    printf("Result = %.2f Volts\n", result);
+    printf("Result: %.2f Volts\n", result);
 }
 
 void Ecurrent()
@@ -31,7 +31,7 @@ void Ecurrent()
     printf("Specify resistance in Ohm\n");
     scanf("%f", &inputR);
     result = inputU / inputR;
-    printf("Result = %.2f Amps\n", result);
+    printf("Result: %.2f Amps\n", result);
 }
 
 void startOhm()
