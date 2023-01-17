@@ -137,5 +137,6 @@ void StartTemp()
         break;
     default:
         printf("Sorry %d is not an option\n", unit);
+        break;
     }
 }

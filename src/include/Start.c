@@ -3,6 +3,7 @@
 #include "Temperature.h"
 #include "ohm.h"
 #include "ShowList.h"
+#include "length.h"
 
 void Start()
 {
@@ -22,9 +23,12 @@ void Start()
     case 'R':
         startOhm();
         break;
+    case 'l':
+        startFeet();
+        break;
     default:
         printf("Sorry %c is not available yet.\n", mode);
-        printf("Please check if you're using capital letters for according to the list %c \n", mode);
+        printf("%c is not a valid option. For more information type L for a list of units\n", mode);
         break;
     }
     printf("Press Ctrl + C to exit\n");

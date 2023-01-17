@@ -4,3 +4,4 @@ It is case sensitive!
 
 T for temperature
 R for ohm (Resistance)
+l for length
