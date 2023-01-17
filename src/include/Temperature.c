@@ -48,7 +48,7 @@ void KToC()
     }
     else
     {
-        Result = InputK + 273.15;
+        Result = InputK - 273.15;
         printf("Result: %.2f degrees Celcius\n", Result);
     }
 }
@@ -65,7 +65,7 @@ void CToK()
     }
     else
     {
-        Result = InputC - 273.15;
+        Result = InputC + 273.15;
         printf("Result: %.2f degrees Kelvin\n", Result);
     }
 }
