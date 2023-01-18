@@ -33,8 +33,26 @@ void CmToI()
     float inputCm, result;
     printf("Specify your input Centimeters\n");
     scanf("%f", &inputCm);
-    result = inputCm * 2.54;
+    result = inputCm / 2.54;
     printf("Result: %.2f Inches\n", result);
+}
+
+void MToKm()
+{
+    float inputM, result;
+    printf("Specify your input Miles\n");
+    scanf("%f", &inputM);
+    result = inputM * 1.609;
+    printf("Result: %.2f Kilometers\n", result);
+}
+
+void KmToM()
+{
+    float inputKm, result;
+    printf("Specify your input Kilometers\n");
+    scanf("%f", &inputKm);
+    result = inputKm / 1.609;
+    printf("Result: %.2f Miles\n", result);
 }
 
 void startFeet()
@@ -45,6 +63,8 @@ void startFeet()
     printf("1 for Meters to Feet\n");
     printf("2 for Inches to Centimeters\n");
     printf("3 for Centimeters to Inches\n");
+    printf("4 for Miles to Kilometers\n");
+    printf("5 for Kilometer to Miles\n");
     scanf("%d", &unit);
     switch (unit)
     {
