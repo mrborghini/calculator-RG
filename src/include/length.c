@@ -19,12 +19,32 @@ void MToF()
     printf("Result: %.2f Feet\n", result);
 }
 
+void IToCm()
+{
+    float inputI, result;
+    printf("Specify your input Inches\n");
+    scanf("%f", &inputI);
+    result = inputI * 2.54;
+    printf("Result: %.2f Centimeters\n", result);
+}
+
+void CmToI()
+{
+    float inputCm, result;
+    printf("Specify your input Centimeters\n");
+    scanf("%f", &inputCm);
+    result = inputCm * 2.54;
+    printf("Result: %.2f Inches\n", result);
+}
+
 void startFeet()
 {
     int unit;
     printf("What unit would you like to convert?\n");
     printf("0 for Feet to Meters\n");
     printf("1 for Meters to Feet\n");
+    printf("2 for Inches to Centimeters\n");
+    printf("3 for Centimeters to Inches\n");
     scanf("%d", &unit);
     switch (unit)
     {
@@ -33,6 +53,12 @@ void startFeet()
         break;
     case 1:
         MToF();
+        break;
+    case 2:
+        IToCm();
+        break;
+    case 3:
+        CmToI();
         break;
     default:
         printf("Sorry %d is not an option\n", unit);
