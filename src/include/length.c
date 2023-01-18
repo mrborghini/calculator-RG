@@ -80,6 +80,12 @@ void startFeet()
     case 3:
         CmToI();
         break;
+    case 4:
+        MToKm();
+        break;
+    case 5:
+        KmToM();
+        break;
     default:
         printf("Sorry %d is not an option\n", unit);
         break;
