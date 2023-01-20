@@ -21,7 +21,6 @@ void Start()
         printf("What mode would you like to use?\n");
         printf("Type L for more information\n");
         scanf("%c", &mode);
-        resetVariables();
 
         switch (mode)
         {
@@ -42,5 +41,6 @@ void Start()
             printf("%c is not a valid option. For more information type L for a list of units\n", mode);
             break;
         }
+        resetVariables();
     }
 }
