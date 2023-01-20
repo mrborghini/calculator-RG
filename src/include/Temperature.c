@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "Temperature.h"
-#include "exit.h"
+#include <stdlib.h>
 
 void FToC()
 {

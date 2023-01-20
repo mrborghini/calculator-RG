@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "exit.h"
 #include "Temperature.h"
 #include "ohm.h"
 #include "ShowList.h"
