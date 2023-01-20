@@ -8,6 +8,9 @@ To build run: ```make```. You must have the compiler gcc and make installed, bas
 It is case sensitive!
 
 ```L``` for list
+
 ```T``` for Temperature
+
 ```R``` for ohm (Resistance)
+
 ```l``` for length
