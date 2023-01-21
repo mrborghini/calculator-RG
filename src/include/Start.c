@@ -3,6 +3,7 @@
 #include "ohm.h"
 #include "ShowList.h"
 #include "length.h"
+#include "emc.h"
 
 void resetVariables()
 {
@@ -34,6 +35,9 @@ void Start()
             break;
         case 'l':
             startFeet();
+            break;
+        case 'E':
+            emc();
             break;
         default:
             printf("Sorry %c is not available yet.\n", mode);

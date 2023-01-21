@@ -2,7 +2,7 @@
 
 void ShowList(){
     int i;
-    char list[][30] = {"T for Temperature", "R for Resistance", "l for length"};
+    char list[][30] = {"T for Temperature", "R for Resistance", "l for length", "E for Mass Energy equivalence"};
     int length = sizeof(list)/sizeof(list[0]);
     for (i = 0; i < length; i++)
     {

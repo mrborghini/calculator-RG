@@ -14,3 +14,5 @@ It is case sensitive!
 ```R``` for ohm (Resistance)
 
 ```l``` for length
+
+```E``` for Mass energy equivalence
