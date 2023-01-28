@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "Temperature.h"
 #include "ohm.h"
 #include "ShowList.h"
@@ -15,6 +16,7 @@ void resetVariables()
 void Start()
 {
     printf("Press Ctrl + C to quit anytime!\n");
+    printf("Or type exit.\n");
     while (1)
     {
         char mode;
@@ -38,6 +40,9 @@ void Start()
             break;
         case 'E':
             emc();
+            break;
+        case 'e':
+            exit(0);
             break;
         default:
             printf("Sorry %c is not available yet.\n", mode);
