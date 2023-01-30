@@ -5,6 +5,7 @@
 #include "ShowList.h"
 #include "length.h"
 #include "emc.h"
+#include "NormalMath.h"
 
 void resetVariables()
 {
@@ -43,6 +44,9 @@ void Start()
             break;
         case 'e':
             exit(0);
+            break;
+        case 't':
+            TableOf();
             break;
         default:
             printf("Sorry %c is not available yet.\n", mode);
