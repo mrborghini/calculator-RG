@@ -24,6 +24,6 @@ void Randomint()
     printf("What should be the maximal amount of the number?\n");
     scanf("%d", &max);
     srand(time(0));
-      num = (rand() % (max - min + 1)) + min;
+    num = (rand() % (max - min + 1)) + min;
     printf("Random number: %d\n", num);
 }
