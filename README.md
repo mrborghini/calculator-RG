@@ -18,3 +18,5 @@ It is case sensitive!
 ```E``` for Mass energy equivalence
 
 ```t``` for table of
+
+```r``` for random number

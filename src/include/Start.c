@@ -48,6 +48,9 @@ void Start()
         case 't':
             TableOf();
             break;
+        case 'r':
+            Randomint();
+            break;
         default:
             printf("Sorry %c is not available yet.\n", mode);
             printf("%c is not a valid option. For more information type L for a list of units\n", mode);
