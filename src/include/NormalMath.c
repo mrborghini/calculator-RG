@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "start.h"
 
 void TableOf()
 {
@@ -26,4 +27,61 @@ void Randomint()
     srand(time(0));
     num = (rand() % (max - min + 1)) + min;
     printf("Random number: %d\n", num);
+}
+
+void NormalMath()
+{
+    int num, i;
+    char operator;
+    int result = 0;
+
+    printf("Enter the number of numbers to be processed: ");
+    scanf("%d", &num);
+
+    int numbers[num];
+
+    printf("Enter %d numbers: ", num);
+    for (i = 0; i < num; i++)
+    {
+        scanf("%d", &numbers[i]);
+    }
+
+    printf("Enter an operator (+, -, *, /): ");
+    scanf("%c", &operator);
+
+    switch (operator)
+    {
+    case '+':
+        result = numbers[0];
+        for (i = 1; i < num; i++)
+        {
+            result += numbers[i];
+        }
+        break;
+    case '-':
+        result = numbers[0];
+        for (i = 1; i < num; i++)
+        {
+            result -= numbers[i];
+        }
+        break;
+    case '*':
+        result = numbers[0];
+        for (i = 1; i < num; i++)
+        {
+            result *= numbers[i];
+        }
+        break;
+    case '/':
+        result = numbers[0];
+        for (i = 1; i < num; i++)
+        {
+            result /= numbers[i];
+        }
+        break;
+    default:
+        printf("Sorry %c is not an operator", operator);
+    }
+
+    printf("Result: %d\n", result);
 }

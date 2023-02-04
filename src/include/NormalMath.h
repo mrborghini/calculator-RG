@@ -2,4 +2,5 @@
 #define NORMALMATH_H
 void TableOf();
 void Randomint();
+void NormalMath();
 #endif
