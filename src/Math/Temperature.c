@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "Temperature.h"
+#include "../include/Temperature.h"
 #include <stdlib.h>
 
 void FToC()

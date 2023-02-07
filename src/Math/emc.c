@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "emc.h"
+#include "../include/emc.h"
 
 void emc()
 {

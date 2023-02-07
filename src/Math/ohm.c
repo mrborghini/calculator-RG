@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "ohm.h"
+#include "../include/ohm.h"
 
 void resistance()
 {

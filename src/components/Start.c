@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Temperature.h"
-#include "ohm.h"
-#include "ShowList.h"
-#include "length.h"
-#include "emc.h"
-#include "NormalMath.h"
+#include "../include/Temperature.h"
+#include "../include/ohm.h"
+#include "../include/ShowList.h"
+#include "../include/length.h"
+#include "../include/emc.h"
+#include "../include/NormalMath.h"
+#include "../include/Start.h"
 
 void resetVariables()
 {
