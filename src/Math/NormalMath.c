@@ -32,8 +32,8 @@ void Randomint()
 
 void NormalMath()
 {
-    int i, numbers[100], num, o;
-    double answer;
+    int i, num, o;
+    double numbers[100], answer;
     char operator;
 
     printf("How many numbers would you like to input?\n");
@@ -42,7 +42,7 @@ void NormalMath()
     for (i = 0; i < num; i++)
     {
         printf("Type number %d\n", i + 1);
-        scanf("%d", &numbers[i]);
+        scanf("%lf", &numbers[i]);
     }
 
     printf("Type an operator (+ - * / modulo)\n");
@@ -64,10 +64,7 @@ void NormalMath()
             answer -= numbers[o];
             break;
         case '/':
-            answer /= (double)numbers[o];
-            break;
-        case '%':
-            answer = (int)answer % numbers[o];
+            answer /= numbers[o];
             break;
         default:
             printf("Sorry %c is not an option\n", operator);
@@ -76,4 +73,3 @@ void NormalMath()
     }
     printf("Result = %.2lf\n", answer);
 }
-
