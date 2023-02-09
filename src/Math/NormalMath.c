@@ -14,7 +14,7 @@ void TableOf()
     for (i = 0; i <= length; i++)
     {
         answer = table * i;
-        printf("%d x %d = %d\n", table, i, answer);
+        printf("%d x %d = %.0lf\n", table, i, answer);
     }
 }
 
