@@ -5,16 +5,16 @@
 
 void TableOf()
 {
-    int length, table, i;
-    double answer;
+    double table, answer;
+    int length;
     printf("Which table would you like?\n");
-    scanf("%d", &table);
+    scanf("%lf", &table);
     printf("How long do you want the table?\n");
     scanf("%d", &length);
-    for (i = 0; i <= length; i++)
+    for (int i = 0; i <= length; i++)
     {
         answer = table * i;
-        printf("%d x %d = %.0lf\n", table, i, answer);
+        printf("%.2lf x %d = %.2lf\n", table, i, answer);
     }
 }
 
