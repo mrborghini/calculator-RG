@@ -3,4 +3,5 @@
 void TableOf();
 void Randomint();
 void NormalMath();
+void factorial();
 #endif

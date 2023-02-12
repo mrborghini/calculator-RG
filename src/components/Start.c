@@ -55,6 +55,9 @@ void Start()
         case 'm':
             NormalMath();
             break;
+        case 'f':
+            factorial();
+            break;
         default:
             printf("Sorry %c is not available yet.\n", mode);
             printf("%c is not a valid option. For more information type L for a list of units\n", mode);

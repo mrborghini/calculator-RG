@@ -73,3 +73,15 @@ void NormalMath()
     }
     printf("Result = %.2lf\n", answer);
 }
+
+void factorial(){
+    float input, answer = 1;
+    int i;
+    printf("Which factorial would you like to know?\n");
+    scanf("%f", &input);
+    for (i = 1; i <= input; ++i)
+    {
+        answer *= i;
+    }
+    printf("Result = %.2f\n", answer);
+}
