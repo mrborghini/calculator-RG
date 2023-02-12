@@ -6,12 +6,12 @@
 void TableOf()
 {
     double table, answer;
-    int length;
+    int length, i;
     printf("Which table would you like?\n");
     scanf("%lf", &table);
     printf("How long do you want the table?\n");
     scanf("%d", &length);
-    for (int i = 0; i <= length; i++)
+    for (i = 0; i <= length; i++)
     {
         answer = table * i;
         printf("%.2lf x %d = %.2lf\n", table, i, answer);
