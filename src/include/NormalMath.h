@@ -4,4 +4,5 @@ void TableOf();
 void Randomint();
 void NormalMath();
 void factorial();
+void percentages();
 #endif

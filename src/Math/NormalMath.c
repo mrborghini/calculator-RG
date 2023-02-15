@@ -85,3 +85,15 @@ void factorial(){
     }
     printf("Result = %.2f\n", answer);
 }
+
+void percentages(){
+    float value1, value2, answeramount, answerpercentage;
+    printf("What is starting the original price\n");
+    scanf("%f", &value1);
+    printf("What does it cost now?\n");
+    scanf("%f", &value2);
+    answeramount = value1 - value2;
+    printf("The difference is: %.2f\n", answeramount);
+    answerpercentage = answeramount / value1 * 100;
+    printf("The percentage is: %.2f\n", answerpercentage);
+}
