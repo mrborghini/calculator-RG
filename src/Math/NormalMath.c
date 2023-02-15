@@ -95,5 +95,5 @@ void percentages(){
     answeramount = value1 - value2;
     printf("The difference is: %.2f\n", answeramount);
     answerpercentage = answeramount / value1 * 100;
-    printf("The percentage is: %.2f\n", answerpercentage);
+    printf("The percentage is: %f\n", answerpercentage);
 }
