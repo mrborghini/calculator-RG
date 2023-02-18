@@ -27,6 +27,8 @@ It is case sensitive!
 
 ```p``` for percentages
 
+```d``` for discount
+
 # How to run?
 
 First run ```make``` in bash to build the program. After it's done compiling you can do the command ```./build/main``` and it will run. For windows you can do the same thing, but you need to run ```./build/main.exe```. On Windows you also can ```double click``` the exe.
