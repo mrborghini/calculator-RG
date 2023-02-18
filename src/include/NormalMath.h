@@ -5,4 +5,5 @@ void Randomint();
 void NormalMath();
 void factorial();
 void percentages();
+void discount();
 #endif

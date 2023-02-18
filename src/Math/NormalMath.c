@@ -74,7 +74,8 @@ void NormalMath()
     printf("Result = %.2lf\n", answer);
 }
 
-void factorial(){
+void factorial()
+{
     float input, answer = 1;
     int i;
     printf("Which factorial would you like to know?\n");
@@ -86,9 +87,10 @@ void factorial(){
     printf("Result = %.2f\n", answer);
 }
 
-void percentages(){
+void percentages()
+{
     float value1, value2, answeramount, answerpercentage;
-    printf("What is starting the original price\n");
+    printf("What is starting the original price?\n");
     scanf("%f", &value1);
     printf("What does it cost now?\n");
     scanf("%f", &value2);
@@ -96,4 +98,17 @@ void percentages(){
     printf("The difference is: %.2f\n", answeramount);
     answerpercentage = answeramount / value1 * 100;
     printf("The percentage is: %f\n", answerpercentage);
+}
+
+void discount()
+{
+    float value1, value2, answer, difference;
+    printf("What is the original price?\n");
+    scanf("%f", &value1);
+    printf("How much percent dicount do you have?\n");
+    scanf("%f", &value2);
+    difference = value1 / 100 * value2;
+    answer = value1 - difference;
+    printf("The difference is: %.2f\n", difference);
+    printf("The full cost is: %.2f\n", answer);
 }
