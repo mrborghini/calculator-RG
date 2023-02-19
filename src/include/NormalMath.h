@@ -6,4 +6,5 @@ void NormalMath();
 void factorial();
 void percentages();
 void discount();
+void exponentiation();
 #endif

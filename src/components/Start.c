@@ -64,6 +64,9 @@ void Start()
         case 'd':
             discount();
             break;
+        case 'P':
+            exponentiation();
+            break;
         default:
             printf("Sorry %c is not available yet.\n", mode);
             printf("%c is not a valid option. For more information type L for a list of units\n", mode);

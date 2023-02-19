@@ -112,3 +112,29 @@ void discount()
     printf("The difference is: %.2f\n", difference);
     printf("The full cost is: %.2f\n", answer);
 }
+
+void exponentiation()
+{
+    int i;
+    float value1, value2, answer = 1;
+
+    printf("Enter an number\n");
+    scanf("%f", &value1);
+    printf("To the power of\n");
+    scanf("%f", &value2);
+    if (value2 >= 0)
+    {
+        for (i = 0; i < value2; i++)
+        {
+            answer *= value1;
+        }
+    }
+    else
+    {
+        for (i = 0; i > value2; i--)
+        {
+            answer /= value1;
+        }
+    }
+    printf("Result: %.2f\n", answer);
+}
