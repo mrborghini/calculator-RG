@@ -29,7 +29,7 @@ It is case sensitive!
 
 ```d``` for discount
 
-```P``` for power of (exponentiation)
+```P``` for power (exponentiation)
 
 # How to run?
 
