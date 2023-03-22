@@ -14,7 +14,7 @@ void TableOf()
     for (i = 0; i <= length; i++)
     {
         answer = table * i;
-        printf("%.2lf x %d = %.2lf\n", table, i, answer);
+        printf("%lf x %d = %lf\n", table, i, answer);
     }
 }
 
@@ -45,7 +45,7 @@ void NormalMath()
         scanf("%lf", &numbers[i]);
     }
 
-    printf("Type an operator (+ - * / modulo)\n");
+    printf("Type an operator (+ - * /)\n");
     scanf(" %c", &operator);
 
     answer = numbers[0];
@@ -64,6 +64,12 @@ void NormalMath()
             answer -= numbers[o];
             break;
         case '/':
+            if (numbers[o] == 0)
+            {
+                printf("Cannot devide by 0\n");
+                exit(0);
+            }
+
             answer /= numbers[o];
             break;
         default:
@@ -71,7 +77,7 @@ void NormalMath()
             break;
         }
     }
-    printf("Result = %.2lf\n", answer);
+    printf("Result = %lf\n", answer);
 }
 
 void factorial()
@@ -84,7 +90,7 @@ void factorial()
     {
         answer *= i;
     }
-    printf("Result = %.2f\n", answer);
+    printf("Result = %f\n", answer);
 }
 
 void percentages()
@@ -95,7 +101,7 @@ void percentages()
     printf("What does it cost now?\n");
     scanf("%f", &value2);
     answeramount = value1 - value2;
-    printf("The difference is: %.2f\n", answeramount);
+    printf("The difference is: %f\n", answeramount);
     answerpercentage = answeramount / value1 * 100;
     printf("The percentage is: %f\n", answerpercentage);
 }
@@ -109,8 +115,8 @@ void discount()
     scanf("%f", &value2);
     difference = value1 / 100 * value2;
     answer = value1 - difference;
-    printf("The difference is: %.2f\n", difference);
-    printf("The full cost is: %.2f\n", answer);
+    printf("The difference is: %f\n", difference);
+    printf("The full cost is: %f\n", answer);
 }
 
 void exponentiation()
@@ -136,5 +142,5 @@ void exponentiation()
             answer /= value1;
         }
     }
-    printf("Result: %.2f\n", answer);
+    printf("Result: %f\n", answer);
 }
