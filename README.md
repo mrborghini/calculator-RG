@@ -29,6 +29,8 @@ It is case sensitive!
 
 ```d``` for discount
 
+```V``` for VAT
+
 ```P``` for power (exponentiation)
 
 # How to run?
