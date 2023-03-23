@@ -119,6 +119,17 @@ void discount()
     printf("The full cost is: %f\n", answer);
 }
 
+void VAT()
+{
+    float price, percentageVAT;
+    printf("What's the original price?\n");
+    scanf("%f", &price);
+    printf("How much percentage VAT do you have?\n");
+    scanf("%f", &percentageVAT);
+    printf("The difference is: %f\n", price / 100 * percentageVAT);
+    printf("The full cost is: %f\n", (price / 100 * percentageVAT) + price);
+}
+
 void exponentiation()
 {
     int i;

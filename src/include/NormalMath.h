@@ -7,4 +7,5 @@ void factorial();
 void percentages();
 void discount();
 void exponentiation();
+void VAT();
 #endif

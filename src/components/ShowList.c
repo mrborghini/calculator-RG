@@ -15,6 +15,7 @@ void ShowList()
         "f for factorial",
         "p for percentages",
         "d for discount",
+        "V for VAT",
         "P for power (exponentiation)"};
     int length = sizeof(list) / sizeof(list[0]);
     for (i = 0; i < length; i++)

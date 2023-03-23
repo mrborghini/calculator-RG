@@ -64,6 +64,9 @@ void Start()
         case 'd':
             discount();
             break;
+        case 'V':
+            VAT();
+            break;
         case 'P':
             exponentiation();
             break;
