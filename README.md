@@ -35,4 +35,4 @@ It is case sensitive!
 
 # How to run?
 
-First run ```make``` in bash to build the program. After it's done compiling you can do the command ```./build/main``` and it will run. For windows you can do the same thing, but you need to run ```./build/main.exe```. On Windows you also can ```double click``` the exe.
+First run ```make``` in bash to build the program. After it's done compiling you can do the command ```./build/main``` and it will run. For windows you can do the same thing or you can double click ```windowsbuild.bat``` and it will build it for you, but you need to run ```./build/main.exe```. On Windows you also can ```double click``` the exe.
